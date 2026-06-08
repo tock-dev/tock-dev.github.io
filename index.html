@@ -2,7 +2,15 @@
 
 <head>
   <title>Steve Persson</title>
-  <link rel="stylesheet" href="styles.css">
+  <script>
+    const ua = navigator.userAgent.toLowerCase();
+    if (!ua.includes('kindle')) {
+      const link = document.createElement('link');
+      link.rel = 'stylesheet';
+      link.href = 'styles.css';
+      document.head.appendChild(link);
+    }
+  </script>
 </head>
 
 <body>
