@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Varela+Round&display=swap');
+
+body {
+  background: url('background.png');
+  margin: 0;
+  padding: 1rem;
+  font-size: large;
+  font-family: "Fjalla One", Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h1 {
+  font-kerning: normal;
+  letter-spacing: 0.05em;
+}
+
+body>div {
+  background-color: rgba(255, 255, 255, 0.15);
+  border-radius: 20px;
+  backdrop-filter: blur(5px);
+  padding: 0.5rem;
+  width: max-content;
+  height: max-content;
+}
+
+ul {
+  list-style: none;
+  padding-left: 15px;
+}
+
+ul>li::before {
+  content: "";
+  font-weight: bold;
+  display: inline-block;
+  width: 15px;
+  aspect-ratio: 1;
+  background: url('wheel.png') no-repeat center center;
+  background-size: contain;
+  margin-right: 5px;
+}
+
+a, a:visited {
+  text-decoration: none;
+  color: rgb(91, 113, 255);
+  transform: scale(1);
+  transition: transform 0.1s ease-in-out;
+  display: inline-block;
+}
+
+a:hover {
+  text-decoration: underline;
+  transform: scale(1.1);
+}
