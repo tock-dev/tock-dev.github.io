@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Allow: /unreader/
+Allow: /simple-onepage-games/
+Disallow: /unreader/modmenu.html
+
+Sitemap: https://tock-dev.github.io/sitemap.xml
